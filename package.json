@@ -1,0 +1,12 @@
+{
+  "name": "hyperbooks-api",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Jon-Felipe",
+  "license": "MIT"
+}
