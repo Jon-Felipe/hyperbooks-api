@@ -9,12 +9,17 @@ connectDB();
 
 const app = express();
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 app.get('/', (req, res) => {
   res.send('API is running...');
 });
 
+// routes
 app.use('/api/users', userRoutes);
 
+// middleware
 app.use(notFound);
 app.use(errorHandler);
 
